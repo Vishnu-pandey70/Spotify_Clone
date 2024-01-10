@@ -1,0 +1,212 @@
+/* Styling for the header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    padding: 10px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the Spotify logo */
+.spotify-logo {
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Styling for the search field */
+.search-field {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Styling for the bell icon */
+.bell-icon {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 65px;
+}
+
+/* Styling for the user image */
+.user-image {
+    height: 30px;
+    filter: invert(1);
+}
+
+/* Styling for the list */
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.list-number {
+    margin-right: 10px;
+}
+
+.list-image {
+width: 50px;
+height: 50px;
+margin-right: 10px;
+}
+
+.list-image2 {
+width: 85px;
+height: 85px;
+margin-right: 10px;
+}
+
+.list-text {
+    flex-grow: 1;
+}
+
+.c-white {
+    color: white;
+}
+
+.image-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+
+.image-list li {
+  margin-right: 10px;
+}
+
+  .image-list li:last-child {
+      margin-right: 0;
+  }
+
+  .image-list li img {
+      width: 100%;
+      margin: 15px;
+      margin-left: 33px;
+      height: 270px;
+  }
+
+.scroll-container {
+height: 100vh; /* Set the height to 50% of the viewport height */
+overflow-y: scroll; /* Enable vertical scrolling */
+
+}
+
+/* Hide the scrollbar for all elements */
+#first::-webkit-scrollbar {
+display:none;
+}
+#second::-webkit-scrollbar {
+display:none;
+}
+#third::-webkit-scrollbar {
+    display:none;
+}
+#fourth::-webkit-scrollbar {
+    display:none;
+}
+
+#five::-webkit-scrollbar {
+    display:none;
+}
+
+#six::-webkit-scrollbar {
+    display:none;
+}
+
+
+
+.hover-focus {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-focus:hover,
+  .hover-focus:focus {
+    transform: scale(1.1);
+  }
+  
+
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .play-button,
+    .image-wrapper:focus .play-button {
+        opacity: 1;
+    }
+
+.play-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid #fff;
+}
+
+.text1{
+    font-size: 15px;
+}
+
+.text2{
+    font-size: 12px;
+}
+.text3{
+    font-size: 13px;
+}
+
+.search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  height:30px;
+  width: 200px;
+  margin-right:80px;
+}
+
+.search-icon-left,
+.search-icon-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-icon-left {
+  left: 5px;
+}
+
+.search-icon-right {
+    right:90px;
+}
+
+

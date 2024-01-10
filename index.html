@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spotify Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add any additional custom styles here */
+    </style>
+</head>
+
+<body style="background-color: #01011c;">
+    <header class="header">
+        <div>
+            <img class="spotify-logo" src="spot.png" alt="Spotify Logo">
+            <span style="color:white ;margin-left:80px"> Favourites</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search">
+                <i class="fas fa-search search-icon-left"></i>
+                <i class="fa-solid fa-microphone search-icon-right"></i> 
+        </div>
+            
+            <i class="fas fa-bell bell-icon"></i>
+            <img class="spotify-logo rounded-circle" style="width: 45px; height: 35px;" src="myimage2.jpg"
+                alt="user profile">
+        </div>
+    </header>
+
+    <div class="row" style="border: 2px solid white; padding: 15px 15px 15px 30px">
+            <div class="col-md-9 scroll-container" id="first" style="border-right: 2px solid #eae2e2;">
+                <div class="row">
+                    <div class="col-md-4">
+                      <img src="latin.jpeg" class="img-fluid hover-focus" style="width: 100%; height: 80%;">
+                    </div>
+                    <div class="col-md-4">
+                      <img src="mood.jpeg" class="img-fluid hover-focus" style="width: 100%; height: 80%;">
+                    </div>
+                    <div class="col-md-4">
+                      <img src="edm.jpeg" class="img-fluid hover-focus" style="width: 100%; height: 80%;">
+                    </div>
+                  </div>
+                  
+                <h4 style="color: white" class="ms-3">Latest Release</h4>
+
+                <!-- latest release -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background: none;">
+                                <div class="list-item">
+                                    <div class="image-wrapper">
+                                        <img class="list-image2" src="onism.jpeg" alt="Image 1">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <div class="list-text c-white m-3">
+                                        <span class="mb-0 " style="font-size: 15px;"><i>Onism</i></span>
+                                        <span style="font-size: 13px; display: block;">Aug 11, 2017</span>
+                                    </div>
+                                    <div class="c-white m-3" style="margin-right: 20px;">
+                                        <span class="c-white" style="font-size: 30px;">...</span>
+                                        <span class="c-white" style="font-size: 12px; display: block;">4:48</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="background: none;">
+                                <div class="list-item">
+                                    <div class="image-wrapper">
+                                        <img class="list-image2" src="onsim2.jpeg" alt="Image 2">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <div class="list-text c-white m-3">
+                                        <span class="mb-0" style="font-size: 15px;"><i>Onism</i></span>
+                                        <span style="font-size: 13px; display: block;">Aug 11, 2017</span>
+                                    </div>
+                                    <div class="c-white m-3" style="margin-right: 20px;">
+                                        <span class="c-white" style="font-size: 30px;">...</span>
+                                        <span class="c-white" style="font-size: 12px; display: block;">4:48</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item mt-0" style="background: none;">
+                                <div class="list-item">
+                                    <div class="image-wrapper">
+                                        <img class="list-image2" src="onsim3.jpeg" alt="Image 3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <div class="list-text c-white m-3">
+                                        <span class="mb-0" style="font-size: 15px;"><i>Onism</i></span>
+                                        <span style="font-size: 13px; display: block;">Aug 11, 2017</span>
+                                    </div>
+                                    <div class="c-white m-3" style="margin-right: 20px;">
+                                        <span class="c-white" style="font-size: 30px;">...</span>
+                                        <span class="c-white" style="font-size: 12px; display: block;">4:48</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="background: none;">
+                                <div class="list-item">
+                                    <div class="image-wrapper">
+                                        <img class="list-image2" src="onsim4.jpeg" alt="Image 1">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <div class="list-text c-white m-3">
+                                        <span class="mb-0" style="font-size: 15px;"><i>Onism</i></span>
+                                        <span style="font-size: 13px; display: block;">Aug 11, 2017</span>
+                                    </div>
+                                    <div class="c-white m-3" style="margin-right: 20px;">
+                                        <span class="c-white" style="font-size: 30px;">...</span>
+                                        <span class="c-white" style="font-size: 12px; display: block;">4:48</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="background: none;">
+                                <div class="list-item">
+                                    <div class="image-wrapper">
+                                        <img class="list-image2" src="titanium.jpeg" alt="Image 2">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <div class="list-text c-white m-3">
+                                        <span class="mb-0" style="font-size: 15px;"><i>Onism</i></span>
+                                        <span style="font-size: 13px; display: block;">Aug 11, 2017</span>
+                                    </div>
+                                    <div class="c-white m-3" style="margin-right: 20px;">
+                                        <span class="c-white" style="font-size: 30px;">...</span>
+                                        <span class="c-white" style="font-size: 12px; display: block;">4:48</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item mt-0" style="background: none;">
+                                <div class="list-item">
+                                    <div class="image-wrapper">
+                                        <img class="list-image2" src="jolt.jpeg" alt="Image 3">
+                                        <div class="play-button"></div>
+                                    </div>
+                                    <div class="list-text c-white m-3">
+                                        <span class="mb-0" style="font-size: 15px;"><i>Onism</i></span>
+                                        <span style="font-size: 13px; display: block;">Aug 11, 2017</span>
+                                    </div>
+                                    <div class="c-white m-3" style="margin-right: 20px;">
+                                        <span class="c-white" style="font-size: 30px;">...</span>
+                                        <span class="c-white" style="font-size: 12px; display: block;">4:48</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Popular Artist -->
+                <div class="container mt-5">
+                    <h4 style="color:white">Popular Artist</h4>
+                    <div class="col-12 overflow-auto" style="white-space: nowrap;" id="third">
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="edsheran.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Ed Sheran</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="taylor.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Taylor Swift</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="shakira.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Shakira</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="justin.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Justin Beiber</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="salena.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Salena Gomez</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="martin.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Martin</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="edsheran.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Ed Sheran</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="taylor.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px; "><br>
+                            <span class="list-text text-white text1">Taylor Swift</span>
+                        </div>
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="shakira.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Shakira</span>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <img class="rounded-circle list-image" src="justin.jpeg" alt="Image 3"
+                                style="height: 100px; width: 100px;"><br>
+                            <span class="list-text text-white text1">Justin Beiber</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music -->
+                <div class="container mt-5 ">
+                    <div class="col-12 overflow-auto" style="white-space: nowrap;" id="fourth">
+                        <div class="d-inline-block position-sticky " style="left: 0; top: 0; z-index: 1; background-color:#01011c;">
+                            <div class="position-relative" id="music21">
+                                <img class="rounded-circle list-image" src="music1.jpeg" alt="Image 1"
+                                    style="height: 100px; width: 100px;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                    <h5 class="text-white text2">Music</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="love.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Love</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="retro.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Retro</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="chill.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Chill</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="work.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Work</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="old.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Old</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="melody.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Melody</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="old.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Old</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="love.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Love</h5>
+                            </div>
+                        </div>
+
+                        <div class="d-inline-block position-relative">
+                            <img class="rounded-circle list-image" src="retro.jpeg" alt="Image 2"
+                                style="height: 100px; width: 100px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <h5 class="text-white text2">Retro</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <h4 class="text-white">Latest English</h4>
+
+                    <div class="col-12 overflow-auto" style="white-space: nowrap;" id="five">
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('shapes.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3"  style="margin-top: 0px;">Shapes of you</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2017</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('titanium.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Titanium</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2018</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('closer.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Closer</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2016</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('sugar.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Sugar</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2018</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('look.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3"  style="margin-top: 0px;">Look What You</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2017</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('lazer.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Lazer</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2019</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('shape1.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Shapes you</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2014</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('closer.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Closer</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2019</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container mt-5">
+                    <h4 class="text-white">Latest Hindi</h4>
+
+                    <div class="col-12 overflow-auto" style="white-space: nowrap;" id="six">
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi1.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2017</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi2.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2018</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi3.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2019</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi4.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2015</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi5.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2016</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi6.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2017</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('neha.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white text3">Aug 11, 2015</span>
+                        </div>
+
+                        <div class="d-inline-block" style="margin-right: 10px;">
+                            <div class="square list-image"
+                                style="height: 100px; width: 100px; background-image: url('hindi7.jpeg'); background-size: cover;">
+                            </div>
+                            <span class="list-text text-white text3" style="margin-top: 0px;">Hindi Song</span><br>
+                            <span class="list-text text-white  text3">Aug 11, 2017</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 3wala -->
+
+            <div class="col-sm-3 mt-2 scroll-container" id="second">
+                <div class="d-flex align-items-center">
+                    <h3 class="mb-3 c-white me-auto">Queue</h3>
+                    <span class="mb-3" style="color:skyblue">Queue  <i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                
+                
+                <ul class="list-group">
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">01</span>
+                            <img class="list-image" src="mirage.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Mirage ..</i></span>
+                                <span style="font-size: 13px; display: block;">Else</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">02</span>
+                            <img class="list-image" src="sorry.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Sorry</i></span>
+                                <span style="font-size: 13px; display: block;">Justin Bieber</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white "></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">03</span>
+                            <img class="list-image" src="see you.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>See You</i></span>
+                                <span style="font-size: 13px; display: block;">Wiz Khalifa</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white "></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">04</span>
+                            <img class="list-image" src="willow.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Willow</i></span>
+                                <span style="font-size: 13px; display: block;">Ever More</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white "></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">05</span>
+                            <img class="list-image" src="oh god.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Oh God</i></span>
+                                <span style="font-size: 13px; display: block;">OMG</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">06</span>
+                            <img class="list-image" src="friday.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Friday</i></span>
+                                <span style="font-size: 13px; display: block;">Rebecca</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white "></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">07</span>
+                            <img class="list-image" src="mirage.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Mirage</i></span>
+                                <span style="font-size: 13px; display: block;">Else</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white"></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">08</span>
+                            <img class="list-image" src="lazer.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>Sorry</i></span>
+                                <span style="font-size: 13px; display: block;">Justin Bieber</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white "></i>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: none;">
+                        <div class="list-item mb-2">
+                            <span class="list-number c-white m-3">09</span>
+                            <img class="list-image" src="faith.jpeg" alt="Image 1">
+                            <div class="list-text c-white m-3">
+                                <span class="mb-0"><i>See You</i></span>
+                                <span style="font-size: 13px; display: block;">Wiz Khalifa</span>
+                            </div>
+                            <i class="fas fa-heart heart-icon c-white"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
